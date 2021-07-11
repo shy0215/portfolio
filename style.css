@@ -5,6 +5,8 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #c3c3c3;
   --color-puple: #4f09b7;
+  --color-light-puple: #a2abcb;
+  --color-dark-puple: #515ea1;
   --color-blue: #1e22c8;
   --color-navy: #001e8d;
   --color-black: #000000;
@@ -126,8 +128,8 @@ p {
 }
 
 .home__avatar {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
 }
 .home__title,
@@ -147,9 +149,13 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
+
 /*About*/
 #about {
   background: url("imgs/background/2.png") center/cover no-repeat;
@@ -200,7 +206,10 @@ p {
   display: flex;
   align-items: center;
 }
-
+.school__logo {
+  background-color: var(--color-white);
+  margin: 0 16px;
+}
 .school__description {
   margin: 0 16px;
   text-align: left;
@@ -216,4 +225,52 @@ p {
 }
 .school__period {
   font-size: var(--font-micro);
+}
+
+/*skill*/
+
+#skill {
+  background-color: var(--color-white);
+}
+.skillset {
+  display: flex;
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  margin: 20px 0;
+}
+.skillset__title {
+  color: var(--color-white);
+  margin: 0;
+}
+.skillset__left {
+  flex-basis: 60%;
+  padding: 20px 40px;
+}
+.skill {
+  margin-bottom: 32px;
+}
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+.skill__bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-dark-gray);
+}
+.skill__value {
+  width: 70%;
+  height: 4px;
+  background-color: var(--color-white);
+}
+.skillset__right {
+  flex-basis: 40%;
+  background-color: var(--color-dark-puple);
+}
+.tools {
+  background-color: var(--color-light-puple);
+}
+.tools,
+.etc {
+  padding: 20px;
 }
