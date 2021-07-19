@@ -179,6 +179,7 @@ p {
 
 /*About*/
 #about {
+  /*background: url("imgs/background/2.png") center/cover no-repeat;*/
   background-color: var(--color-navy);
   text-align: center;
   position: relative;
@@ -477,6 +478,26 @@ span {
 
 .contact__email i {
   margin-right: 10px;
+}
+
+/*Scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 55px;
+  height: 55px;
+  font-size: 40px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+}
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
