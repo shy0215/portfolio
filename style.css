@@ -90,12 +90,22 @@ p {
 
 /*Navbar*/
 #navbar {
+  position: fixed;
+  /*margin: 0 auto;
+  left: 0;
+  right: 0;*/
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-white);
   align-items: center;
   color: var(--color-blue);
-  padding: 20px;
+  padding: 16px;
+  background-color: transparent;
+  transition: all var(--animation-duration) ease-in-out;
+}
+#navbar.navbar--dark {
+  background-color: var(--color-white);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -121,20 +131,20 @@ p {
   border-radius: var(--size-border-radius);
 }
 .navbar__toggle-btn {
+  display: none;
   position: absolute;
   top: 24px;
   right: 32px;
   font-size: 24px;
   color: var(--color-blue);
-  display: none;
 }
 
 /*Home*/
 #home {
   background: url("imgs/background/3.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
-  position: relative;
 }
 
 .home__avatar {
@@ -168,7 +178,7 @@ p {
 
 /*About*/
 #about {
-  background: url("imgs/background/2.png") center/cover no-repeat;
+  background-color: var(--color-navy);
   padding: 40px;
   text-align: center;
   position: relative;
