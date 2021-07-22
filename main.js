@@ -19,17 +19,24 @@ navbarMenu.addEventListener('click',(event) => {
   if(link == null) {
     return;
   }
+
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
 
 
 });
-
+//Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+  
 //Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click',() => {
   scrollIntoView('#contact');
 });
-  
+
 //Make home slowly fade to transparent as the window scrolls down
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
@@ -69,7 +76,7 @@ workBtnContainer.addEventListener('click', (e) => {
   const target = 
     e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   target.classList.add('selected');
-  
+
   projectContainer.classList.add('anim-out');
   setTimeout(() => {
     projects.forEach((project) => { 
