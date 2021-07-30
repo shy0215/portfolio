@@ -456,10 +456,11 @@ span {
 .testimonial__rect {
   width: 30px;
   height: 200px;
+  margin-right: 60px;
 }
 .testimonial__rect1 {
   height: 200px;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 .testimonial__rect2 {
   height: 200px;
