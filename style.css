@@ -458,15 +458,14 @@ span {
   height: 200px;
 }
 .testimonial__rect1 {
-  width: 200px;
   height: 200px;
   margin-right: 40px;
 }
 .testimonial__rect2 {
-  width: 200px;
   height: 200px;
   margin-left: 20px;
 }
+
 .testimonial__people i {
   color: var(--color-dark-white);
 }
