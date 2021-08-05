@@ -616,5 +616,6 @@ span {
     line-height: 40px;
     right: 24px;
     bottom: 16px;
+    padding: 0;
   }
 }
