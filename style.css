@@ -65,26 +65,26 @@ button {
 h1 {
   font-size: var(--Font-large);
   font-weight: var(--wight-bold);
-  color: var(--color-blue);
+  color: var(--color-black);
   margin: 16px 0px;
 }
 
 h2 {
   font-size: var(--Font-medium);
   font-weight: var(--wight-semi-bold);
-  color: var(--color-blue);
+  color: var(--color-white);
   margin: 8px 0px;
 }
 h3 {
   font-size: var(--font-small);
   font-weight: var(--Font-regular);
-  color: var(--color-blue);
+  color: var(--color-white);
   margin: 8px 0px;
 }
 p {
   font-size: var(--Font-small);
   font-weight: var(--Font-regular);
-  color: var(--color-blue);
+  color: var(--color-white);
   margin: 4px 0px;
 }
 
