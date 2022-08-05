@@ -13,9 +13,10 @@
   --color-dark-gray: #7f7f7f;
 
   /* Font size */
-  --Font-large: 48px;
-  --Font-medium: 28px;
-  --Font-regular: 18px;
+  --font-large: 48px;
+  --font-largemedium: 40px;
+  --font-medium: 28px;
+  --font-regular: 20px;
   --font-small: 16px;
   --font-micro: 14px;
 
@@ -63,27 +64,36 @@ button {
 
 /*Typography*/
 h1 {
-  font-size: var(--Font-large);
+  font-size: var(--font-large);
   font-weight: var(--wight-bold);
   color: var(--color-black);
   margin: 16px 0px;
 }
 
 h2 {
-  font-size: var(--Font-medium);
+  font-size: var(--font-medium);
   font-weight: var(--wight-semi-bold);
   color: var(--color-white);
   margin: 8px 0px;
 }
+
 h3 {
-  font-size: var(--font-small);
-  font-weight: var(--Font-regular);
+  font-size: var(--font-regular);
+  font-weight: var(--wight-regular-bold);
   color: var(--color-white);
   margin: 8px 0px;
 }
+
+h4{
+  font-size: var(--font-largemedium);
+  font-weight: var(--wight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+}
+
 p {
-  font-size: var(--Font-small);
-  font-weight: var(--Font-regular);
+  font-size: var(--font-small);
+  font-weight: var(--wight-regular-bold);
   color: var(--color-white);
   margin: 4px 0px;
 }
@@ -193,7 +203,6 @@ p {
   background-color: var(--color-navy);
   text-align: center;
   position: relative;
-  padding-top: 70px;
 }
 .about__title {
   color: var(--color-white);
@@ -269,6 +278,8 @@ p {
   color: var(--color-white);
   margin: 20px 0;
 }
+
+
 .skillset__title {
   color: var(--color-white);
   margin: 0;
@@ -482,7 +493,7 @@ span {
   color: var(--color-white);
 }
 .contact__title {
-  margin: 32px 0;
+  margin-bottom: 28px;
 }
 
 .contact__links {
